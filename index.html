@@ -6,33 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Menu</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/images/logo-valentim-ft.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo-valentim-ft.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
     <!-- NAVEGAÇÃO -->
     <nav class="navigation">
-        <div class="navigation-inner">
+        <div class="navigation-inner site-container">
             <img id="logo" src="" alt="">
             <div class="main-navigation">
                 <ul class="main-navigation-ul">
-                    <li><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">5</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Projetos</a></li>
+                    <li><a href="">Trabalhe Conosco</a></li>
                 </ul>
             </div>
-            <div id="btnBurguer" class="burguer-container">
+            <div id="btnBurguer" class="burguer-container" onclick="menuFun(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
+            <script>
+                function menuFun(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
         </div>
     </nav>
+
+    <section class="section-top-banner">
+        <div class="top-banner-inner site-container">
+            <div class="top-banner-image">
+                <img src="/images/programador_vert.jpg" alt="">
+            </div>
+            <div class="top-banner-text">
+                <div class="top-banner-text-up">
+                    <span class="top-banner-span">Olá, Me chamo</span>
+                    <h2 class="top-banner-h2">Emerson</h2>
+                </div>
+                <div class="top-banner-text-down">
+                    <h2 class="top-banner-h2">Valentim</h2>
+                    <span class="top-banner-span2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+                        blanditiis deleniti distinctio sunt eum animi reiciendis suscipit iure illo dolore doloribus
+                        laboriosam quas necessitatibus iusto dicta velit, ut voluptatem natus.</span>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, non quia. Iure quasi fuga esse
+                    pariatur commodi veniam voluptatem maxime libero temporibus cum unde, aut recusandae laboriosam
+                    similique ab tempora.</p>
+                <a href="#" class="a-button">Leia Mais</a>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
